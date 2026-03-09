@@ -1,0 +1,108 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #0d1117;
+  color: #c9d1d9;
+  min-height: 100vh;
+}
+
+header {
+  padding: 24px 32px;
+  border-bottom: 1px solid #21262d;
+}
+
+header h1 { font-size: 22px; margin-bottom: 4px; }
+header p { color: #8b949e; font-size: 14px; }
+
+main { padding: 24px 32px; max-width: 900px; }
+
+#setup { margin-bottom: 20px; }
+
+#create-btn {
+  padding: 12px 24px;
+  background: #238636;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+#create-btn:hover { background: #2ea043; }
+
+.url-box { margin-bottom: 16px; }
+.url-box label { display: block; margin-bottom: 6px; color: #8b949e; font-size: 13px; }
+.url-row { display: flex; gap: 8px; }
+.url-row input {
+  flex: 1;
+  padding: 10px 14px;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  color: #58a6ff;
+  font-family: monospace;
+  font-size: 14px;
+}
+.url-row button {
+  padding: 10px 16px;
+  background: #21262d;
+  color: #c9d1d9;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.url-row button:hover { background: #30363d; }
+
+.hint { color: #8b949e; font-size: 13px; margin-top: 8px; }
+.hidden { display: none; }
+
+.request-card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.request-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background: #21262d;
+  cursor: pointer;
+}
+
+.method-badge {
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 12px;
+  color: #fff;
+}
+.method-GET { background: #238636; }
+.method-POST { background: #1f6feb; }
+.method-PUT { background: #d29922; }
+.method-DELETE { background: #da3633; }
+.method-PATCH { background: #8957e5; }
+
+.request-time { color: #8b949e; font-size: 12px; }
+
+.request-body {
+  padding: 14px 16px;
+  display: none;
+}
+.request-body.open { display: block; }
+
+.request-body h4 { color: #8b949e; font-size: 11px; text-transform: uppercase; margin-bottom: 6px; margin-top: 12px; }
+.request-body h4:first-child { margin-top: 0; }
+
+.request-body pre {
+  background: #0d1117;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
