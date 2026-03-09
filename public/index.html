@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webhook Tester</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🪝 Webhook Tester</h1>
+    <p>Create a unique URL and inspect incoming requests in real-time.</p>
+  </header>
+  <main>
+    <div id="setup">
+      <button id="create-btn" onclick="createHook()">Create Webhook URL</button>
+    </div>
+    <div id="hook-info" class="hidden">
+      <div class="url-box">
+        <label>Your webhook URL:</label>
+        <div class="url-row">
+          <input type="text" id="hook-url" readonly>
+          <button onclick="copyUrl()">Copy</button>
+        </div>
+      </div>
+      <p class="hint">Send any HTTP request to this URL and it will appear below.</p>
+    </div>
+    <div id="requests"></div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
